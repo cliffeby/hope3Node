@@ -4,9 +4,9 @@ module.exports.homelist = function(req, res) {
         title: 'Hope Express - Home',
         pageHeader: {
             title: 'HOPE',
-            strapline: 'Create a inventory app!'
+            strapline: 'Create an inventory app!'
         },
-        sidebar: "Anything for a sidebar?",
+        sidebar: "Anyone for a sidebar?",
         hopeCategories: [{
             name: 'Clothing',
             perishable: 'no',

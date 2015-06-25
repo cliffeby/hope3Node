@@ -14,14 +14,7 @@ block content
         each category in hopeCategories
           .col-xs-12.list-group-item
             h4 
-              a(href="/location")= category.name
-              small &nbsp;
-                +outputRating(category.bin)
-              span.badge.pull-right.badge-default= category.distance
-            p.address= location.address
-            p
-              each facility in location.facilities
-                span.label.label-warning= facility
-                &nbsp;
+              a(href="/category")= category.name
+
     .col-xs-12.col-sm-4 
       p.lead= sidebar
