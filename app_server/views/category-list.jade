@@ -1,6 +1,6 @@
 extends layout
 
-include _includes/sharedHTMLfunctions
+//include _includes/sharedHTMLfunctions
 
 block content
   #banner.page-header
@@ -11,13 +11,13 @@ block content
   .row
     .col-xs-12.col-sm-8
       .row.list-group
-        each category in categories
+        each category in hopeCategories
           .col-xs-12.list-group-item
             h4 
-              a(href="/location")= location.name
+              a(href="/location")= category.name
               small &nbsp;
-                +outputRating(location.rating)
-              span.badge.pull-right.badge-default= location.distance
+                +outputRating(category.bin)
+              span.badge.pull-right.badge-default= category.distance
             p.address= location.address
             p
               each facility in location.facilities
