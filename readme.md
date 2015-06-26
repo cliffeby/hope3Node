@@ -1,47 +1,51 @@
-
-RESTful URLs
-
-
-General guidelines for RESTful URLs•A URL identifies a resource.
-•URLs should include nouns, not verbs.
-•Use plural nouns only for consistency (no singular nouns).
-•Use HTTP verbs (GET, POST, PUT, DELETE) to operate on the collections and elements.
-•You shouldn’t need to go deeper than resource/identifier/resource.
-•Put the version number at the base of your URL, for example http://example.com/v1/path/to/resource.
-•URL v. header: ?If it changes the logic you write to handle the response, put it in the URL.
-?If it doesn’t change the logic for each response, like OAuth info, put it in the header.
-
-•Specify optional fields in a comma separated list.
-•Formats should be in the form of api/v2/resource/{id}.json
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1>RESTful URLs</h1>
 
 
+<h2>General guidelines for RESTful URLs</h2>
+<ul>
+<li>A URL identifies a resource. </li>
+<li>URLs should include nouns, not verbs. </li>
+<li>Use plural nouns only for consistency (no singular nouns).          </li>
+<li>Use HTTP verbs (GET, POST, PUT, DELETE) to operate on the collections and elements.    </li>
+<li>You shouldnâ€™t need to go deeper than resource/identifier/resource.       </li>
+<li>Put the version number at the base of your URL, for example http://example.com/v1/path/to/resource. </li>
+<li>URL v. header: ?If it changes the logic you write to handle the response, put it in the URL. </li>
+<li>If it doesnâ€™t change the logic for each response, like OAuth info, put it in the header.  </li>
+<li></li>
+<li>Specify optional fields in a comma separated list.   </li>
+<li>Formats should be in the form of api/v2/resource/{id}.json  </li>
+<li></li>
+</ul>
 
-HOPE URL examples
+<h2>HOPE URL examples</h2>
+<ul>
+<li>List of categories: ?GET http://localhost:3000/api/v1/categories.json </li>
+<li>Filtering is a query: ?GET http://localhost:3000/api/v1/categories.json?type=perishable&sort=desc </li>
+<li>A single category in JSON format: ?GET http://localhost:3000/api/v1/categories/1234.json  </li>
+<li>All items in (or belonging to) this category: ?GET http://localhost:3000/api/v1/categories/1234/items.json </li>
+<li>All items in this category in XML format: ?GET http://localhost:3000/api/v1/categories/1234/items.xml </li><li>Add a new article to a particular magazine: ?POST http://localhost:3000/api/v1/categories/1234/items  </li>
+ </ul>
 
-•List of categories: ?GET http://localhost:3000/api/v1/categories.json
-
-•Filtering is a query: ?GET http://localhost:3000/api/v1/categories.json?type=perishable&sort=desc
-                       
-•A single category in JSON format: ?GET http://localhost:3000/api/v1/categories/1234.json
-
-•All items in (or belonging to) this category: ?GET http://localhost:3000/api/v1/categories/1234/items.json
-
-•All items in this category in XML format: ?GET http://localhost:3000/api/v1/categories/1234/items.xml
-
-•Add a new article to a particular magazine: ?POST http://localhost:3000/api/v1/categories/1234/items
-
-
-
-HTTP Verbs
-HTTP verbs, or methods, should be used in compliance with their definitions under the HTTP/1.1 standard. 
-The action taken on the representation will be contextual to the media type being worked on and 
-its current state. Here's an example of how HTTP verbs map to create, read, update, delete operations 
+<h2>HTTP Verbs</h2>
+HTTP verbs, or methods, should be used in compliance with their definitions under the HTTP/1.1 standard.
+The action taken on the representation will be contextual to the media type being worked on and
+its current state. Here's an example of how HTTP verbs map to create, read, update, delete operations
 in a particular context:
 
 
 HTTP METHOD     POST                GET             PUT         DELETE
-CRUD OP         CREATE              READ            UPDATE      DELETE 
-/items          Create new items    List items      Bulk update Delete all dogs 
-/items/1234     Error               Show Tie        If exists,  Delete Tie 
-                                                    update Tie; 
-                                                    If not, error 
+CRUD OP         CREATE              READ            UPDATE      DELETE
+/items          Create new items    List items      Bulk update Delete all dogs
+/items/1234     Error               Show Tie        If exists,  Delete Tie
+update Tie;
+If not, error
+
+</body>
+</html>
