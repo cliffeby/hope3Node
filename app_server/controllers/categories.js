@@ -1,5 +1,30 @@
 /* GET 'home' page */
 module.exports.homelist = function(req, res) {
+    res.render('home-list', {
+        title: 'Hope Express - Home',
+        pageHeader: {
+            title: 'HOPE',
+            strapline: 'Create an inventory app!'
+        },
+        sidebar: "Anyone for a sidebar?",
+        hopeCategories: [{
+            name: 'Clothing',
+            perishable: 'no',
+            bin: 3,
+            location: '100 Main St.',
+            value: '$10'
+        }, {
+            name: 'Food',
+            perishable: 'yes',
+            bin: 13,
+            location: '100 Main St.',
+            value: '$5'
+        }]
+    });
+};
+
+//GET 'categories' page
+module.exports.categorylist = function(req, res) {
     res.render('category-list', {
         title: 'Hope Express - Home',
         pageHeader: {
