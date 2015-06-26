@@ -5,9 +5,15 @@
     <title></title>
 </head>
 <body>
-<h1>RESTful URLs</h1>
 
+<h1>HOPE Data model</h1>
+<ul>
+<li>Users -properties and attributes TBD</>
+<li>Categories -properties and attributes TBD<li>    
+<li>Items -properties and attributes TBD<li>    
+<li>About<li>    
 
+<h1>RESTful URLs</h1> 
 <h2>General guidelines for RESTful URLs</h2>
 <ul>
 <li>A URL identifies a resource. </li>
