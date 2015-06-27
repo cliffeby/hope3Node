@@ -24,8 +24,8 @@ module.exports.homelist = function(req, res) {
 };
 
 //GET 'categories' page
-module.exports.categorylist = function(req, res) {
-    res.render('category-list', {
+module.exports.categoryList = function(req, res) {
+    res.render('categories-list', {
         title: 'Hope Express - Home',
         pageHeader: {
             title: 'HOPE',
@@ -49,8 +49,8 @@ module.exports.categorylist = function(req, res) {
 };
 
 /* GET 'Location info' page */
-module.exports.locationInfo = function(req, res) {
-    res.render('location-info', {
+module.exports.locationList = function(req, res) {
+    res.render('locations-list', {
         title: 'Hope Home',
         pageHeader: {
             title: 'HOPE Office location'
