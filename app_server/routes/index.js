@@ -6,10 +6,13 @@ var ctrlOthers = require('../controllers/others');
 var ctrlMain = require('../controllers/home');
 var ctrlLocations = require('../controllers/locations');
 
-/* Locations pages */
+/* Categories and Items pages */
 router.get('/', ctrlMain.home);
 router.get('/categories', ctrlCategories.categoryList);
 router.get('/categories/items', ctrlCategories.itemList);
+router.get('/categories/1/items/1', ctrlCategories.item);
+
+/* Locations pages */
 router.get('/locations', ctrlLocations.locationList);
 
 /* Other pages */
