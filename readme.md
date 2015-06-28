@@ -48,12 +48,9 @@ its current state. Here's an example of how HTTP verbs map to create, read, upda
 in a particular context:
 
 
-<h2>HTTP METHOD     POST                GET             PUT         DELETE</h2>
-<h3>CRUD OP         CREATE              READ            UPDATE      DELETE</h3>
-<h3>/items          Create new items    List items      Bulk update Delete all dogs</h3>
-/items/1234     Error               Show Tie        If exists,  Delete Tie
-update Tie;
-If not, error
+<h2>Framework</h2>
+I used the Node/Express template on Webstrorm 10.  The only addition was nodemon  (npm i nodemon -g) to facilitate restarts (rs) in lieu of CtrlC Y npm start.
 
+I was unable to structure this framework into the meanjs 4.0 file layout.  The Routes path seems to require a specific directory.  Additionally, this framework requires an HTML teplate.  Jade was the default setting.
 </body>
 </html>
