@@ -13,7 +13,7 @@
 <ul>
 <li>Items -properties and attributes TBD</li>
 </ul>
-<li>Locations<li>  
+<li>Locations</li>  
 <li>About</li>    
 </ul>
 <h1>RESTful URLs</h1> 
@@ -27,7 +27,6 @@
 <li>Put the version number at the base of your URL, for example http://example.com/v1/path/to/resource. </li>
 <li>URL v. header: ?If it changes the logic you write to handle the response, put it in the URL. </li>
 <li>If it doesn’t change the logic for each response, like OAuth info, put it in the header.  </li>
-<li></li>
 <li>Specify optional fields in a comma separated list.   </li>
 <li>Formats should be in the form of api/v2/resource/{id}.json  </li>
 <li></li>
@@ -39,7 +38,8 @@
 <li>Filtering is a query: ?GET http://localhost:3000/api/v1/categories.json?type=perishable&sort=desc </li>
 <li>A single category in JSON format: ?GET http://localhost:3000/api/v1/categories/1234.json  </li>
 <li>All items in (or belonging to) this category: ?GET http://localhost:3000/api/v1/categories/1234/items.json </li>
-<li>All items in this category in XML format: ?GET http://localhost:3000/api/v1/categories/1234/items.xml </li><li>Add a new article to a particular magazine: ?POST http://localhost:3000/api/v1/categories/1234/items  </li>
+<li>All items in this category in XML format: ?GET http://localhost:3000/api/v1/categories/1234/items.xml </li>
+<li>Add a new article to a particular magazine: ?POST http://localhost:3000/api/v1/categories/1234/items  </li>
  </ul>
 
 <h2>HTTP Verbs</h2>
@@ -49,7 +49,7 @@ its current state. Here's an example of how HTTP verbs map to create, read, upda
 in a particular context:
 
 
-HTTP METHOD     POST                GET             PUT         DELETE
+<h2>HTTP METHOD     POST                GET             PUT         DELETE</h2>
 CRUD OP         CREATE              READ            UPDATE      DELETE
 /items          Create new items    List items      Bulk update Delete all dogs
 /items/1234     Error               Show Tie        If exists,  Delete Tie
