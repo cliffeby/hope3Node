@@ -5,6 +5,11 @@
 </head>
 <body>
 
+<h1>Framework</h1>
+I used the Node/Express template on Webstrorm 10.  The only addition was nodemon  (npm i nodemon -g) to facilitate restarts (rs) in lieu of CtrlC Y npm start.
+
+I was unable to structure this framework into the meanjs 4.0 file layout.  The Routes path seems to require a specific directory.  Additionally, this framework requires an HTML teplate.  Jade was the default setting.
+
 <h1>HOPE Data model</h1>
 <ul>
 <li>Users -properties and attributes TBD</li>
@@ -48,9 +53,6 @@ its current state. Here's an example of how HTTP verbs map to create, read, upda
 in a particular context:
 
 
-<h2>Framework</h2>
-I used the Node/Express template on Webstrorm 10.  The only addition was nodemon  (npm i nodemon -g) to facilitate restarts (rs) in lieu of CtrlC Y npm start.
 
-I was unable to structure this framework into the meanjs 4.0 file layout.  The Routes path seems to require a specific directory.  Additionally, this framework requires an HTML teplate.  Jade was the default setting.
 </body>
 </html>
