@@ -34,7 +34,7 @@ module.exports.itemList = function(req, res) {
             title: 'HOPE',
             strapline: 'Create an inventory app!'
         },
-        sidebar: "Anyone for a sidebar?",
+        sidebar: "Time for a sidebar?",
         hopeCategories: [{
             name: 'Clothing',
             perishable: 'no',
@@ -52,22 +52,5 @@ module.exports.itemList = function(req, res) {
             id: 2,
             items: [{name: 'Pretzels'},{name: 'Diet Coke'}]
         }]
-    });
-};
-
-/* GET 'Location info' page */
-module.exports.locationList = function(req, res) {
-    res.render('locations-list', {
-        title: 'Hope Home',
-        pageHeader: {
-            title: 'HOPE Office location'
-        },
-        sidebar: {
-            context: 'sidebar contex'
-        },
-        location: {
-            name: 'Main Office',
-            address: '125 High Street, Reading, RG6 1PS'
-        }
     });
 };
