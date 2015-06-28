@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -50,8 +49,8 @@ in a particular context:
 
 
 <h2>HTTP METHOD     POST                GET             PUT         DELETE</h2>
-CRUD OP         CREATE              READ            UPDATE      DELETE
-/items          Create new items    List items      Bulk update Delete all dogs
+<h3>CRUD OP         CREATE              READ            UPDATE      DELETE</h3>
+<h3>/items          Create new items    List items      Bulk update Delete all dogs</h3>
 /items/1234     Error               Show Tie        If exists,  Delete Tie
 update Tie;
 If not, error
