@@ -9,7 +9,6 @@ var ctrlMain = require('../controllers/home');
 router.get('/', ctrlMain.home);
 router.get('/categories', ctrlCategories.categoryList);
 router.get('/categories/items', ctrlCategories.itemList);
-router.get('/categories/1/items', ctrlCategories.itemList);
 
 /* Other pages */
 router.get('/about', ctrlOthers.about);

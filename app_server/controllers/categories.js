@@ -13,6 +13,7 @@ module.exports.categoryList = function(req, res) {
             bin: 3,
             location: '100 Main St.',
             value: '$10',
+            id: 1,
             items: [{Name: 'Socks'},{Name: 'Pants'}]
         }, {
             name: 'Food',
@@ -20,6 +21,7 @@ module.exports.categoryList = function(req, res) {
             bin: 13,
             location: '100 Main St.',
             value: '$5',
+            id: 2,
             items: [{Name: 'Pretzels'},{Name: 'Diet Coke'}]
         }]
     });
@@ -39,6 +41,7 @@ module.exports.itemList = function(req, res) {
             bin: 3,
             location: '100 Main St.',
             value: '$10',
+            id: 1,
             items: [{name: 'Socks'},{name: 'Pants'}]
         }, {
             name: 'Food',
@@ -46,6 +49,7 @@ module.exports.itemList = function(req, res) {
             bin: 13,
             location: '100 Main St.',
             value: '$5',
+            id: 2,
             items: [{name: 'Pretzels'},{name: 'Diet Coke'}]
         }]
     });
@@ -63,20 +67,7 @@ module.exports.locationList = function(req, res) {
         },
         location: {
             name: 'Main Office',
-            address: '125 High Street, Reading, RG6 1PS',
-        }
-    });
-};
-
-/* GET 'Add review' page */
-module.exports.addReview = function(req, res) {
-    res.render('item-create-form', {
-        title: 'Create item in category',
-        pageHeader: {
-            title: 'Item'
-        },
-        user: {
-            displayName: "Cliff Eby"
+            address: '125 High Street, Reading, RG6 1PS'
         }
     });
 };
