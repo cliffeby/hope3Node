@@ -12,6 +12,7 @@ router.get('/categories', ctrlCategories.categoryList);
 
 /* Other pages */
 router.get('/about', ctrlOthers.about);
+router.get('/help', ctrlOthers.help);
 
 //router.get('/', function(req, res, next) {
 //  res.render('index', { title: 'HOPE Express' });
