@@ -3,12 +3,12 @@ var router = express.Router();
 
 var ctrlCategories = require('../controllers/categories');
 var ctrlOthers = require('../controllers/others');
-var ctrlMain = require('../controllers/main');
+var ctrlMain = require('../controllers/home');
 
 /* Locations pages */
 router.get('/', ctrlMain.home);
 router.get('/categories', ctrlCategories.categoryList);
-//router.get('/categories/review/new', ctrlCategories.itemList);
+router.get('/category/items', ctrlCategories.itemList);
 
 /* Other pages */
 router.get('/about', ctrlOthers.about);

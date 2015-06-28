@@ -1,28 +1,3 @@
-/* GET 'home' page */
-module.exports.homelist = function(req, res) {
-    res.render('home-list', {
-        title: 'Hope Express - Home',
-        pageHeader: {
-            title: 'HOPE',
-            strapline: 'Create an inventory app!'
-        },
-        sidebar: "Anyone for a sidebar?",
-        hopeCategories: [{
-            name: 'Clothing',
-            perishable: 'no',
-            bin: 3,
-            location: '100 Main St.',
-            value: '$10'
-        }, {
-            name: 'Food',
-            perishable: 'yes',
-            bin: 13,
-            location: '100 Main St.',
-            value: '$5'
-        }]
-    });
-};
-
 //GET 'categories' page
 module.exports.categoryList = function(req, res) {
     res.render('categories-list', {
@@ -37,13 +12,41 @@ module.exports.categoryList = function(req, res) {
             perishable: 'no',
             bin: 3,
             location: '100 Main St.',
-            value: '$10'
+            value: '$10',
+            items: [{Name: 'Socks'},{Name: 'Pants'}]
         }, {
             name: 'Food',
             perishable: 'yes',
             bin: 13,
             location: '100 Main St.',
-            value: '$5'
+            value: '$5',
+            items: [{Name: 'Pretzels'},{Name: 'Diet Coke'}]
+        }]
+    });
+};
+//GET 'categories' page
+module.exports.itemList = function(req, res) {
+    res.render('items-list', {
+        title: 'Hope Express - Home',
+        pageHeader: {
+            title: 'HOPE',
+            strapline: 'Create an inventory app!'
+        },
+        sidebar: "Anyone for a sidebar?",
+        hopeCategories: [{
+            name: 'Clothing',
+            perishable: 'no',
+            bin: 3,
+            location: '100 Main St.',
+            value: '$10',
+            items: [{name: 'Socks'},{name: 'Pants'}]
+        }, {
+            name: 'Food',
+            perishable: 'yes',
+            bin: 13,
+            location: '100 Main St.',
+            value: '$5',
+            items: [{name: 'Pretzels'},{name: 'Diet Coke'}]
         }]
     });
 };
