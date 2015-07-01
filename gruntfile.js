@@ -3,10 +3,14 @@
  */
 module.export  = function(grunt) {
     grunt.initConfig({
-        eslint: {
-            target: ['file.js']
+        jshint: {
+            all: ['./app_server/**/*.js'],
+            options:{
+                unused: true
+            }
         }
     });
+    grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.registerTask('default', 'jshint');
 
-    grunt.registerTask('default', ['eslint']);
 };
