@@ -1,4 +1,5 @@
 //GET 'categories' page
+/*global require, module,  __dirname */
 module.exports.categoryList = function(req, res) {
     res.render('categories-list', {
         title: 'Hope Express - Categories List',

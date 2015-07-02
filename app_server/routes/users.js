@@ -1,3 +1,4 @@
+/*global require, module,  __dirname */
 var express = require('express');
 var router = express.Router();
 

@@ -1,4 +1,5 @@
 /* GET 'about us' page */
+/*global require, module,  __dirname */
 module.exports.about = function(req, res) {
     res.render('about', {
         title: 'About Hope',
