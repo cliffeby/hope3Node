@@ -1,6 +1,6 @@
 //GET 'categories' page
 /*global require, module,  __dirname */
-module.exports.categoryList = function(req, res) {
+module.exports.categoryList = function (req, res) {
     res.render('categories-list', {
         title: 'Hope Express - Categories List',
         pageHeader: {
@@ -15,7 +15,7 @@ module.exports.categoryList = function(req, res) {
             location: '100 Main St.',
             value: '$10',
             id: 1,
-            items: [{Name: 'Socks'},{Name: 'Pants'}]
+            items: [{Name: 'Socks'}, {Name: 'Pants'}]
         }, {
             name: 'Food',
             perishable: 'yes',
@@ -23,12 +23,12 @@ module.exports.categoryList = function(req, res) {
             location: '100 Main St.',
             value: '$5',
             id: 2,
-            items: [{Name: 'Pretzels'},{Name: 'Diet Coke'}]
+            items: [{Name: 'Pretzels'}, {Name: 'Diet Coke'}]
         }]
     });
 };
 //GET 'categories' page
-module.exports.itemList = function(req, res) {
+module.exports.itemList = function (req, res) {
     res.render('items-list', {
         title: 'Hope Express - Items List',
         pageHeader: {
@@ -43,7 +43,7 @@ module.exports.itemList = function(req, res) {
             location: '100 Main St.',
             value: '$10',
             id: 1,
-            items: [{name: 'Socks'},{name: 'Pants'}]
+            items: [{name: 'Socks'}, {name: 'Pants'}]
         }, {
             name: 'Food',
             perishable: 'yes',
@@ -51,12 +51,12 @@ module.exports.itemList = function(req, res) {
             location: '100 Main St.',
             value: '$5',
             id: 2,
-            items: [{name: 'Pretzels'},{name: 'Diet Coke'}]
+            items: [{name: 'Pretzels'}, {name: 'Diet Coke'}]
         }]
     });
 };
 //GET 'item' page
-module.exports.item = function(req, res) {
+module.exports.item = function (req, res) {
     res.render('item', {
         title: 'Hope Express - Item',
 
@@ -72,7 +72,7 @@ module.exports.item = function(req, res) {
             location: '100 Main St.',
             value: '$10',
             id: 1,
-            items: [{name: 'Socks'},{name: 'Pants'}]
+            items: [{name: 'Socks'}, {name: 'Pants'}]
         }, {
             name: 'Food',
             perishable: 'yes',
@@ -80,9 +80,9 @@ module.exports.item = function(req, res) {
             location: '100 Main St.',
             value: '$5',
             id: 2,
-            items: [{name: 'Pretzels'},{name: 'Diet Coke'}]
+            items: [{name: 'Pretzels'}, {name: 'Diet Coke'}]
         }],
-          item: 'Diet Coke'
+        item: 'Diet Coke'
         //item: hopeCategories[1].name.items[1].name  item not defined
     });
 };

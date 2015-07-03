@@ -1,6 +1,6 @@
 /* GET 'Location info' page */
 /*global require, module,  __dirname */
-module.exports.locationList = function(req, res) {
+module.exports.locationList = function (req, res) {
     res.render('locations-list', {
         title: 'Hope Home',
         pageHeader: {
