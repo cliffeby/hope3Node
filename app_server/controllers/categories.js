@@ -1,5 +1,6 @@
 //GET 'categories' page
 /*global require, module,  __dirname */
+"use strict";
 module.exports.categoryList = function(req, res) {
     res.render('categories-list', {
         title: 'Hope Express - Categories List',
@@ -15,7 +16,7 @@ module.exports.categoryList = function(req, res) {
             location: '100 Main St.',
             value: '$10',
             id: 1,
-            items: [{Name: 'Socks'},{Name: 'Pants'}]
+            items: [{Name: 'Socks'}, {Name: 'Pants'}]
         }, {
             name: 'Food',
             perishable: 'yes',
@@ -23,7 +24,7 @@ module.exports.categoryList = function(req, res) {
             location: '100 Main St.',
             value: '$5',
             id: 2,
-            items: [{Name: 'Pretzels'},{Name: 'Diet Coke'}]
+            items: [{Name: 'Pretzels'}, {Name: 'Diet Coke'}]
         }]
     });
 };
@@ -43,7 +44,7 @@ module.exports.itemList = function(req, res) {
             location: '100 Main St.',
             value: '$10',
             id: 1,
-            items: [{name: 'Socks'},{name: 'Pants'}]
+            items: [{name: 'Socks'}, {name: 'Pants'}]
         }, {
             name: 'Food',
             perishable: 'yes',
@@ -51,7 +52,7 @@ module.exports.itemList = function(req, res) {
             location: '100 Main St.',
             value: '$5',
             id: 2,
-            items: [{name: 'Pretzels'},{name: 'Diet Coke'}]
+            items: [{name: 'Pretzels'}, {name: 'Diet Coke'}]
         }]
     });
 };
@@ -72,7 +73,7 @@ module.exports.item = function(req, res) {
             location: '100 Main St.',
             value: '$10',
             id: 1,
-            items: [{name: 'Socks'},{name: 'Pants'}]
+            items: [{name: 'Socks'}, {name: 'Pants'}]
         }, {
             name: 'Food',
             perishable: 'yes',
@@ -80,7 +81,7 @@ module.exports.item = function(req, res) {
             location: '100 Main St.',
             value: '$5',
             id: 2,
-            items: [{name: 'Pretzels'},{name: 'Diet Coke'}]
+            items: [{name: 'Pretzels'}, {name: 'Diet Coke'}]
         }],
           item: 'Diet Coke'
         //item: hopeCategories[1].name.items[1].name  item not defined

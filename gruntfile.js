@@ -5,6 +5,7 @@
  * Created by EbyC on 6/30/2015.
  */
 /*global require, module,  __dirname */
+"use strict";
 module.exports = function(grunt) {
 
     grunt.initConfig({
@@ -46,6 +47,7 @@ module.exports = function(grunt) {
     // Load JSHint task
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-nodemon');
+    grunt.loadNpmTasks("grunt-contrib-eslint");
 
     // Default task.
     grunt.registerTask('default', [ 'jshint','nodemon']);

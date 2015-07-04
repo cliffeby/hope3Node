@@ -9,6 +9,11 @@
     "env": {
       "browser": true,
       "node": true
+    },
+    "rules": {
+      "eqeqeq": 0,
+      "curly": 2,
+      "quotes": [1, "single"]
     }
   },
   "dependencies": {
@@ -22,6 +27,7 @@
   },
   "devDependencies": {
     "grunt": "latest",
+    "grunt-contrib-eslint": "0.0.5",
     "grunt-eslint": "^16.0.0",
     "grunt-nodemon": "^0.4.0"
   },

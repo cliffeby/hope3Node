@@ -1,5 +1,6 @@
 /* GET 'Location info' page */
 /*global require, module,  __dirname */
+"use strict";
 module.exports.locationList = function(req, res) {
     res.render('locations-list', {
         title: 'Hope Home',
