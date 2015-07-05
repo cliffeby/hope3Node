@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "nodemon ./bin/www",
+    "test": "karma start karma.conf.js"
   },
   "eslintConfig": {
     "env": {
@@ -29,7 +30,11 @@
     "grunt": "latest",
     "grunt-contrib-eslint": "0.0.5",
     "grunt-eslint": "^16.0.0",
-    "grunt-nodemon": "^0.4.0"
+    "grunt-nodemon": "^0.4.0",
+    "jasmine-core": "^2.2.0",
+    "karma": "^0.12.31",
+    "karma-chrome-launcher": "^0.1.7",
+    "karma-jasmine": "^0.3.5"
   },
   "description": "<html lang=\"en\">\r <head>\r     <meta charset=\"UTF-8\">\r     <title></title>\r </head>\r <body>",
   "main": "app.js",
