@@ -1,9 +1,6 @@
 /**
  * Created by EbyC on 7/3/2015.
  */
-/**
- * Created by EbyC on 6/30/2015.
- */
 /*global require, module,  __dirname */
 "use strict";
 module.exports = function(grunt) {
@@ -49,8 +46,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-nodemon');
     grunt.loadNpmTasks("grunt-contrib-eslint");
 
-    // Default task.
+    // Default task
     grunt.registerTask('default', [ 'jshint','nodemon']);
+    // Other tasks
     grunt.registerTask('lint', ['eslint']);
 
 

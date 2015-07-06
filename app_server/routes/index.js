@@ -1,6 +1,7 @@
 /*global require, module,  __dirname */
 /*eslint quotes: [2, "single"], curly: 2*/
-"use strict";
+/*jshint strict:false */
+//"use strict";
 var express = require('express');
 var router = express.Router();
 
