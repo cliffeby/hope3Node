@@ -52,7 +52,11 @@ The action taken on the representation will be contextual to the media type bein
 its current state. Here's an example of how HTTP verbs map to create, read, update, delete operations
 in a particular context:
 
+<h2>Grunt</h2>
 
+<h2>JSHint and ESLint</h2>
+
+<h2>Karma and Jasmine</h2>
 
 </body>
 </html>
