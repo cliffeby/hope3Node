@@ -1,18 +1,18 @@
-/* GET 'Location info' page */
+/* GET "Location info" page */
 /*global require, module,  __dirname */
 "use strict";
 module.exports.locationList = function(req, res) {
-    res.render('locations-list', {
-        title: 'Hope Home',
+    res.render("locations-list", {
+        title: "Hope Home",
         pageHeader: {
-            title: 'HOPE Office location'
+            title: "HOPE Office location"
         },
         sidebar: {
-            context: 'sidebar contex'
+            context: "sidebar contex"
         },
         location: {
-            name: 'Main Office',
-            address: '125 High Street, Reading, PA  17017'
+            name: "Main Office",
+            address: "125 High Street, Reading, PA  17017"
         }
     });
 };

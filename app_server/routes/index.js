@@ -2,26 +2,26 @@
 /*eslint quotes: [2, "single"], curly: 2*/
 /*jshint strict:false */
 //"use strict";
-var express = require('express');
+var express = require("express");
 var router = express.Router();
 
-var ctrlCategories = require('../controllers/categories');
-var ctrlOthers = require('../controllers/others');
-var ctrlMain = require('../controllers/home');
-var ctrlLocations = require('../controllers/locations');
+var ctrlCategories = require("../controllers/categories");
+var ctrlOthers = require("../controllers/others");
+var ctrlMain = require("../controllers/home");
+var ctrlLocations = require("../controllers/locations");
 
 /* Categories and Items pages */
-router.get('/', ctrlMain.home);
-router.get('/categories', ctrlCategories.categoryList);
-router.get('/categories/items', ctrlCategories.itemList);
-router.get('/categories/1/items/1', ctrlCategories.item);
+router.get("/", ctrlMain.home);
+router.get("/categories", ctrlCategories.categoryList);
+router.get("/categories/items", ctrlCategories.itemList);
+router.get("/categories/1/items/1", ctrlCategories.item);
 
 /* Locations pages */
-router.get('/locations', ctrlLocations.locationList);
+router.get("/locations", ctrlLocations.locationList);
 
 /* Other pages */
-router.get('/about', ctrlOthers.about);
-router.get('/help', ctrlOthers.help);
+router.get("/about", ctrlOthers.about);
+router.get("/help", ctrlOthers.help);
 
 
 module.exports = router;
