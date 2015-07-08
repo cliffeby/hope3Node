@@ -3,12 +3,7 @@
  */
 var request = require('http');
 describe('my test suite',function() {
-    //it("should respond with hello world", function (done) {
-    //    request("http://localhost:3000/hello", function (error, response, body) {
-    //        expect(body).toEqual("hello world");
-    //        done();
-    //    });
-    //});
+
     it('Server should respond to /', function (done){
         request.get("http://localhost:3000/", function(response){
             expect(response.statusCode).toBe(200);
