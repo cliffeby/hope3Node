@@ -19,5 +19,12 @@ describe('my test suite',function() {
             home.strapline = "Creating an inventory app!";
         });
     };
+    var ctrl;
+    beforeEach(inject(function($controller){
+        ctrl = $controller(home);
+    }));
+    it("should have items available on load", function(){
+        expect(ctrl.home.strapline).toEqual("Creating an inventory app!");
+    })
 });
 
