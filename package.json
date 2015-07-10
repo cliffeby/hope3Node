@@ -14,10 +14,7 @@
     "rules": {
       "eqeqeq": 0,
       "curly": 2,
-      "quotes": [
-        1,
-        "double"
-      ]
+      "quotes": [1,"double"]
     }
   },
   "dependencies": {
@@ -32,9 +29,10 @@
   },
   "devDependencies": {
     "grunt": "latest",
-    "gruntify-eslint": "latest",
+    "grunt-contrib-jasmine": "^0.8.2",
     "grunt-eslint": "^16.0.0",
     "grunt-nodemon": "^0.4.0",
+    "gruntify-eslint": "latest",
     "jasmine-core": "^2.2.0",
     "karma": "^0.12.31",
     "karma-chrome-launcher": "^0.1.7",

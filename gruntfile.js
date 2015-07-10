@@ -45,11 +45,13 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-nodemon');
     grunt.loadNpmTasks("grunt-contrib-eslint");
+    grunt.loadNpmTasks('grunt-contrib-jasmine');
 
     // Default task
     grunt.registerTask('default', [ 'jshint','nodemon']);
     // Other tasks
     grunt.registerTask('lint', ['eslint']);
+   // grunt.registerTask('jasmine', ['jasmine']);
 
 
 };
