@@ -37,6 +37,16 @@ module.exports = function(grunt) {
         },
         eslint: {
             target: ['./app_server/**/*.js']
+        },
+        jasmine: {
+            src: './app_server/**/*.js',
+            options: {
+                specs: './spec/*Spec.js'
+            }},
+        karma: {
+            unit: {
+                configFile: 'karma.conf.js'
+            }
         }
     });
 
@@ -46,6 +56,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-nodemon');
     grunt.loadNpmTasks("grunt-contrib-eslint");
     grunt.loadNpmTasks('grunt-contrib-jasmine');
+    grunt.loadNpmTasks('grunt-karma');
 
     // Default task
     grunt.registerTask('default', [ 'jshint','nodemon']);
