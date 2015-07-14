@@ -12,7 +12,7 @@ I was unable to structure this framework into the meanjs 4.0 file layout.  The R
 
 <h1>Install and run</h1>
 The Node/Express template on Webstrorm 10 requires an npm install to install the node and express modules.  Nodemon  (npm i nodemon -g) was added to facilitate restarts (rs) in lieu of CtrlC Y npm start.
-To run, use <b>npm start.</>
+To run, use <b>npm start.</b>
 
 <h1>HOPE Data model</h1>
 <ul>
