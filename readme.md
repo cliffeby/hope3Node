@@ -8,7 +8,11 @@
 <h1>Framework</h1>
 I used the Node/Express template on Webstrorm 10.  The only addition was nodemon  (npm i nodemon -g) to facilitate restarts (rs) in lieu of CtrlC Y npm start.
 
-I was unable to structure this framework into the meanjs 4.0 file layout.  The Routes path seems to require a specific directory.  Additionally, this framework requires an HTML template.  Jade was the default setting.
+I was unable to structure this framework into the meanjs 4.0 file layout.  The Routes path seems to require a specific directory.  Additionally, the Node/Express template on Webstrorm 10 requires an HTML template.  Jade was the default setting.
+
+<h1>Install and run</h1>
+The Node/Express template on Webstrorm 10 requires an npm install to install the node and express modules.  Nodemon  (npm i nodemon -g) was added to facilitate restarts (rs) in lieu of CtrlC Y npm start.
+To run, use <b>npm start.</>
 
 <h1>HOPE Data model</h1>
 <ul>
