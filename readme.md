@@ -17,9 +17,7 @@ Nodemon  (npm i nodemon -g) was added to facilitate restarts (rs) in lieu of Ctr
 ##HOPE Data model
 * Users -properties and attributes TBD
 * Categories -properties and attributes TBD
-
-
-###Items -properties and attributes TBD
+* Items -properties and attributes TBD
 * Locations
 * About
 
@@ -36,16 +34,16 @@ Nodemon  (npm i nodemon -g) was added to facilitate restarts (rs) in lieu of Ctr
 * Specify optional fields in a comma separated list
 * Formats should be in the form of api/v2/resource/{id}.json
 
-###HOPE URL examples
+### URL examples
 
 * List of categories: ?GET http://localhost:3000/api/v1/categories.json
 * Filtering is a query: ?GET http://localhost:3000/api/v1/categories.json?type=perishable&sort=desc
 * A single category in JSON format: ?GET http://localhost:3000/api/v1/categories/1234.json
-All items in (or belonging to) this category: ?GET http://localhost:3000/api/v1/categories/1234/items.json
+* All items in (or belonging to) this category: ?GET http://localhost:3000/api/v1/categories/1234/items.json
 * All items in this category in XML format: ?GET http://localhost:3000/api/v1/categories/1234/items.xml
 * Add a new article to a particular magazine: ?POST http://localhost:3000/api/v1/categories/1234/items
 
-     Routes implemented
+   ### Hope Routes implemented
      
      * /
      * /categories
