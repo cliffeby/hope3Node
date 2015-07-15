@@ -49,6 +49,16 @@ To run, use <b>npm start.</b>
 <li>All items in this category in XML format: ?GET http://localhost:3000/api/v1/categories/1234/items.xml </li>
 <li>Add a new article to a particular magazine: ?POST http://localhost:3000/api/v1/categories/1234/items  </li>
  </ul>
+ <ul>  Routes implemented
+      <li> / </li> 
+      <li>/categories  </li>
+      <li>/categories/items/ </li>
+      <li>/categories/items/1/items</li>
+      <li>/locations </li>
+      <li>/about </li>
+      <li>/help </li>
+       </ul>
+ 
 
 <h2>HTTP Verbs</h2>
 HTTP verbs, or methods, should be used in compliance with their definitions under the HTTP/1.1 standard.
