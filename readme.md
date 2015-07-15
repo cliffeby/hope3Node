@@ -49,11 +49,11 @@ To run, use <b>npm start.</b>
 <li>All items in this category in XML format: ?GET http://localhost:3000/api/v1/categories/1234/items.xml </li>
 <li>Add a new article to a particular magazine: ?POST http://localhost:3000/api/v1/categories/1234/items  </li>
  </ul>
- <ul>  Routes implemented
+ <ul>  <b>Routes implemented</b>
       <li> / </li> 
       <li>/categories  </li>
       <li>/categories/items/ </li>
-      <li>/categories/items/1/items</li>
+      <li>/categories/1/items</li>
       <li>/locations </li>
       <li>/about </li>
       <li>/help </li>
