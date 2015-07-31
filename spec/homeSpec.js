@@ -13,7 +13,7 @@ describe('my test suite',function() {
 
     it("should return Creating an inventory app!"), function(home){
         request("http://localhost:3000/home", function(error, response, body){
-            home.strapline = "Creating an inventory app!";
+            home.strapline = "Creating an big inventory app!";
         });
     };
 });
