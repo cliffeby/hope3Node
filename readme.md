@@ -61,3 +61,13 @@ its current state. Here's an example of how HTTP verbs map to create, read, upda
 in a particular context:
 
 
+
+
+###Grunt
+Grunt is a task runner added to simplify cli input for default and testing scenarios.  Use grunt, grunt lint, grunt jshint, and grunt jasmine.
+
+###JSHint and ESLint
+gruntfile.js includes paramaeters for each.  
+
+###Karma and Jasmine
+Testing frameworks.  Karma //TODO.  For Jasmine, spec directory created and sample controller test configured.
