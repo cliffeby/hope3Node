@@ -14,6 +14,7 @@ module.exports = function(grunt) {
         jshint: {
             src: ['gruntfile.js', './app_server/**/*.js'],
             options: {
+                node: true,
                 curly: true,
                 eqeqeq: true,
                 immed: true,

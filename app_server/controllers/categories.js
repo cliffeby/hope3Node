@@ -28,7 +28,7 @@ module.exports.categoryList = function(req, res) {
         }]
     });
 };
-//GET "categories" page
+//GET "Item list" page
 module.exports.itemList = function(req, res) {
     res.render("items-list", {
         title: "Hope Express - Items List",
