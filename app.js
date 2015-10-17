@@ -1,4 +1,5 @@
 var express = require('express');
+var cors = require('cors');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
@@ -9,7 +10,12 @@ var routes = require('./app_server/routes/index');
 var users = require('./app_server/routes/users');
 
 var app = express();
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/mobile-hope')
+//mongoose.connect('mongodb://cce:cce@ds051883.mongolab.com:51883/mobile-hope')
 
+//
+var Category = require('./app_server/model')
 // view engine setup
 app.set('views', path.join(__dirname, './app_server/views'));
 app.set('view engine', 'jade');
@@ -21,7 +27,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
+app.use(cors());
 app.use('/', routes);
 app.use('/users', users);
 

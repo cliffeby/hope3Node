@@ -47,7 +47,7 @@ Nodemon  (npm i nodemon -g) was added to facilitate restarts (rs) in lieu of Ctr
      
      * /
      * /categories
-     * /categories/items/
+     * /allItems
      * /categories/1/items
      * /locations
      * /about
